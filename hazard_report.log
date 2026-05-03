@@ -1,0 +1,33 @@
+
+============================================================
+PIPELINE HAZARD DETECTION & PERFORMANCE REPORT
+============================================================
+Total Instructions Executed:  32
+Total Cycles:                 43
+Stall Cycles:                 5
+Pipeline CPI:                 1.344
+Ideal CPI (no hazards):       1.000
+CPI Overhead:                 0.344
+
+Hazard Statistics:
+  RAW Hazards Detected:       15
+  Load-Use Stalls:            5
+  Stall % of cycles:          11.6%
+============================================================
+
+Hazard Events (all):
+  Cycle   4: RAW_from_EXMEM reg x 2 at PC 0x00208233
+  Cycle   5: RAW_from_EXMEM reg x 3 at PC 0x00320333
+  Cycle  11: RAW_from_EXMEM reg x10 at PC 0x00a28333
+  Cycle  11: LOAD_USE     reg x 5 at PC 0x00000028
+  Cycle  12: RAW_from_EXMEM reg x 5 at PC 0x00a28333
+  Cycle  15: LOAD_USE     reg x 8 at PC 0x00000034
+  Cycle  16: RAW_from_EXMEM reg x 8 at PC 0x01040493
+  Cycle  18: LOAD_USE     reg x11 at PC 0x0000003c
+  Cycle  19: RAW_from_EXMEM reg x11 at PC 0x00b30633
+  Cycle  27: RAW_from_EXMEM reg x 6 at PC 0x00d33733
+  Cycle  27: LOAD_USE     reg x13 at PC 0x00000058
+  Cycle  28: RAW_from_EXMEM reg x13 at PC 0x00d33733
+  Cycle  30: LOAD_USE     reg x15 at PC 0x00000060
+  Cycle  31: RAW_from_EXMEM reg x15 at PC 0x00f38833
+  Cycle  39: RAW_from_EXMEM reg x 1 at PC 0x00110133
